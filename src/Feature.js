@@ -16,7 +16,7 @@ class Feature extends React.Component {
 Feature.propTypes = {
   features: React.PropTypes.object,
   children: React.PropTypes.object,
-  name: React.PropTypes.string
+  flag: React.PropTypes.string
 };
 
 

@@ -68,3 +68,19 @@ Finally, you can wrap your feature in the `Feature` component and pass it a flag
     <Link to="/link/will/not/render" />
   </Feature>
 ```
+
+
+### Automatically Treat Component as a Feature
+
+You can use a high order function provided by react-redux-feature-flags to automatically treat a component as a feature for you.
+
+
+```jsx
+import {withFeature} from 'react-redux-feature-flags';
+import Component from './Component';
+
+
+...
+<Route path="/users" component={withFeature(Component, 'someFeature')} />
+...
+```
